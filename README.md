@@ -1,12 +1,12 @@
 # Orion RDV Bot
 
-Orion RDV Bot is a Telegram bot designed to check for available appointments on the Orion reservation system and notify users when appointments are found.
+Orion RDV Bot is a Telegram bot designed to check for available appointments on the Orion calendar of the Rennes prefecture and notify users when an appointment is found.
 
-**Warning**: Orion RDV Bot uses web scraping to retrieve appointment information from the Orion reservation system. Make sure to use it responsibly and only for personal usage and avoid excessive scraping, as it may violate the terms of service of the website.
+**Warning**: Orion RDV Bot uses web scraping to retrieve appointment information from the shared calendar of the Ille-et-Vilaine prefecture. Make sure to use it responsibly and only for personal usage and avoid excessive scraping, as it may violate the terms of service of the website.
 
 ## Features
 
-- Scrapes the Orion reservation system for available appointments
+- Scrapes the shared calendar of the Ille-et-Vilaine prefecture for available appointments
 - Notifies users via Telegram when appointments are found
 - Allows users to start and stop appointment checking
 - Allows users to set the frequency of appointment checking
@@ -29,7 +29,7 @@ Copy and paste this token in the config.py or in the `docker-compose.yaml`
 Before running the bot, make sure to configure the following variables in the `config.py` file:
 
 - `TOKEN`: Your Telegram bot token.
-- `URL`: The URL of the Orion reservation system.
+- `URL`: The URL of the Orion shared calendar.
 - `DEFAULT_FREQUENCY`: The interval between each request to orion timetable.
 - `CHROMIUM_PATH`: The path to the Chromium executable or leave it empty if using the default system path.
 
